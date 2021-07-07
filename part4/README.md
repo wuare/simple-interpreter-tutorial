@@ -5,4 +5,5 @@ learn how to parse and interpret arithmetic expressions with any number of multi
 use context-free grammars  
 
 grammar
-![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part4/images/lsbasi_part4_bnf1.png)
+![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part4/images/lsbasi_part4_bnf1.png)  
+(the image from [Ruslan' Blog](https://ruslanspivak.com/lsbasi-part4/))  
