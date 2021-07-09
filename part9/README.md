@@ -23,3 +23,33 @@ END.
 ![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part9/images/lsbasi_part9_syntax_diagram_02.png)  
 ![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part9/images/lsbasi_part9_syntax_diagram_03.png)  
 (the image from [Ruslan' Blog](https://ruslanspivak.com/lsbasi-part9/))  
+
+#### complete grammar
+```grammar
+program : compound_statement DOT
+
+    compound_statement : BEGIN statement_list END
+
+    statement_list : statement
+                   | statement SEMI statement_list
+
+    statement : compound_statement
+              | assignment_statement
+              | empty
+
+    assignment_statement : variable ASSIGN expr
+
+    empty :
+
+    expr: term ((PLUS | MINUS) term)*
+
+    term: factor ((MUL | DIV) factor)*
+
+    factor : PLUS factor
+           | MINUS factor
+           | INTEGER
+           | LPAREN expr RPAREN
+           | variable
+
+    variable: ID
+```
