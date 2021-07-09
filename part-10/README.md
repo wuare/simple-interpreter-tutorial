@@ -39,3 +39,42 @@ END.  {Part10}
 ![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part-10/images/lsbasi_part10_grammar1.png)  
 ![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part-10/images/lsbasi_part10_grammar2.png)  
 (the image from [Ruslan' Blog](https://ruslanspivak.com/lsbasi-part10/))  
+#### complete grammar
+```grammar
+    program : PROGRAM variable SEMI block DOT
+
+    block : declarations compound_statement
+
+    declarations : VAR (variable_declaration SEMI)+
+                 | empty
+
+    variable_declaration : ID (COMMA ID)* COLON type_spec
+
+    type_spec : INTEGER | REAL
+
+    compound_statement : BEGIN statement_list END
+
+    statement_list : statement
+                   | statement SEMI statement_list
+
+    statement : compound_statement
+              | assignment_statement
+              | empty
+
+    assignment_statement : variable ASSIGN expr
+
+    empty :
+
+    expr : term ((PLUS | MINUS) term)*
+
+    term : factor ((MUL | INTEGER_DIV | FLOAT_DIV) factor)*
+
+    factor : PLUS factor
+           | MINUS factor
+           | INTEGER_CONST
+           | REAL_CONST
+           | LPAREN expr RPAREN
+           | variable
+
+    variable: ID
+```
