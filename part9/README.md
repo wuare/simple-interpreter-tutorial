@@ -20,4 +20,6 @@ END.
 ```
 #### syntax diagrams and grammar rules
 ![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part9/images/lsbasi_part9_syntax_diagram_01.png)  
+![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part9/images/lsbasi_part9_syntax_diagram_02.png)  
+![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part9/images/lsbasi_part9_syntax_diagram_03.png)  
 (the image from [Ruslan' Blog](https://ruslanspivak.com/lsbasi-part9/))  
