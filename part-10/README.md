@@ -36,6 +36,6 @@ END.  {Part10}
 4. We will add support for Pascal comments
 
 #### syntax diagrams and grammar rules
-![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part10/images/lsbasi_part10_grammar1.png)  
-![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part10/images/lsbasi_part10_grammar2.png)  
+![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part-10/images/lsbasi_part10_grammar1.png)  
+![grammar](https://github.com/wuare/simple-interpreter-tutorial/blob/master/part-10/images/lsbasi_part10_grammar2.png)  
 (the image from [Ruslan' Blog](https://ruslanspivak.com/lsbasi-part10/))  
